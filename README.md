@@ -24,7 +24,7 @@
 
 #### 💜 Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ridho17-ind/Skyzo-Player)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/synpl/tes-player)
 
 
 ##### 📚 Variabel Yang Dibutuhkan
