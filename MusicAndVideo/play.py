@@ -17,17 +17,17 @@ from config import HNDLR, bot, call_py
 from MusicAndVideo.helpers.queues import QUEUE, add_to_queue, get_queue
 
 AMBILFOTO = [
-    "https://telegra.ph/file/cbdd8b864c39b394de8f6.jpg",
-    "https://telegra.ph/file/24126cf48ed2bc9f6ee60.jpg",
-    "https://telegra.ph/file/9e8adc4d38dc05e913fd1.jpg",
-    "https://telegra.ph/file/806b59d49aa0e326a3184.jpg",
-    "https://telegra.ph/file/83939bc9832dff8a83682.jpg",
-    "https://telegra.ph/file/2aef497654499534d94de.jpg",
-    "https://telegra.ph/file/7141b55e33b69a434f8c5.jpg",
-    "https://telegra.ph/file/cbce4a97105ee1debdf91.jpg",
-    "https://telegra.ph/file/7001368a78193f179bd67.jpg",
-    "https://telegra.ph/file/1d1748506600b2da206c8.jpg",
-    "https://telegra.ph/file/d081b03640c7cb4247b17.jpg",
+    "https://telegra.ph/file/8848555e430a8155e824a.jpg",
+    "https://telegra.ph/file/864df287ae368e99b925f.jpg",
+    "https://telegra.ph/file/6f81845ff2b598558e20c.jpg",
+    "https://telegra.ph/file/784c67688f3f8b9abf262.jpg",
+    "https://telegra.ph/file/f095c6852ef7bc479598f.jpg",
+    "https://telegra.ph/file/1397d86280643b3b08e0a.jpg",
+    "https://telegra.ph/file/b883f4e2917dda9e66470.jpg",
+    "https://telegra.ph/file/322400a353ad9cc73a32f.jpg",
+    "https://telegra.ph/file/1c877451bb26e7f319e0c.jpg",
+    "https://telegra.ph/file/53084322beebd33c19b9f.jpg",
+    "https://telegra.ph/file/29028ae36f65f25396027.jpg",
 ]
 
 IMAGE_THUMBNAIL = random.choice(AMBILFOTO)
@@ -127,10 +127,10 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/d6f92c979ad96b2031cba.png",
                     caption=f"""
-**#⃣ Lagu Di Antrian Ke {pos}
-📚 Judul: [{songname}]({link})
-📨 Chat ID: {chat_id}
-🦹🏻 Permintaan: {m.from_user.mention}**
+**#✧ Lagu Di Antrian Ke {pos}
+✧ Judul: [{songname}]({link})
+✧ Chat ID: {chat_id}
+✧ Permintaan: {m.from_user.mention}**
 """,
                 )
             else:
@@ -147,10 +147,10 @@ async def play(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/6213d2673486beca02967.png",
                     caption=f"""
-**📨 Mulai Memutar Lagu
-📚 Judul: [{songname}]({link})
-📝 Chat ID: {chat_id}
-🦹🏻 Atas Permintaan: {m.from_user.mention}**
+**✧ Mulai Memutar Lagu
+✧ Judul: [{songname}]({link})
+✧ Chat ID: {chat_id}
+✧ Atas Permintaan: {m.from_user.mention}**
 """,
                 )
 
@@ -178,10 +178,10 @@ async def play(client, m: Message):
                         await m.reply_photo(
                             photo=f"{IMAGE_THUMBNAIL}",
                             caption=f"""
-**#⃣ Lagu Di Antrian Ke {pos}
-🗃️ Judul: [{songname}]({url})
-📝 Chat ID: {chat_id}
-🦹🏻 Atas Permintaan: {m.from_user.mention}**
+**#✧ Lagu Di Antrian Ke {pos}
+✧ Judul: [{songname}]({url})
+✧ Chat ID: {chat_id}
+✧ Atas Permintaan: {m.from_user.mention}**
 """,
                         )
                     else:
@@ -199,10 +199,10 @@ async def play(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{IMAGE_THUMBNAIL}",
                                 caption=f"""
-**▶ Mulai Memutar Lagu
-🗃️ Judul: [{songname}]({url})
-📝 Chat ID: {chat_id}
-🙇 Atas Permintaan: {m.from_user.mention}**
+**✧ Mulai Memutar Lagu
+✧ Judul: [{songname}]({url})
+✧ Chat ID: {chat_id}
+✧ Atas Permintaan: {m.from_user.mention}**
 """,
                             )
                         except Exception as ep:
@@ -244,10 +244,10 @@ async def vplay(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/d6f92c979ad96b2031cba.png",
                     caption=f"""
-**#⃣ Video Di Antrian Ke {pos}
-📚 Judul: [{songname}]({link})
-📝 Chat ID: {chat_id}
-🦹🏻 Atas Permintaan: {m.from_user.mention}**
+**#✧ Video Di Antrian Ke {pos}
+✧ Judul: [{songname}]({link})
+✧ Chat ID: {chat_id}
+✧ Atas Permintaan: {m.from_user.mention}**
 """,
                 )
             else:
@@ -268,10 +268,10 @@ async def vplay(client, m: Message):
                 await m.reply_photo(
                     photo="https://telegra.ph/file/6213d2673486beca02967.png",
                     caption=f"""
-**▶ Mulai Memutar Video
-📚 Judul: [{songname}]({link})
-📝 Chat ID: {chat_id}
-🦹🏻 Atas permintaan: {m.from_user.mention}**
+**✧ Mulai Memutar Video
+✧ Judul: [{songname}]({link})
+✧ Chat ID: {chat_id}
+✧ Atas permintaan: {m.from_user.mention}**
 """,
                 )
 
@@ -305,10 +305,10 @@ async def vplay(client, m: Message):
                         await m.reply_photo(
                             photo=f"{IMAGE_THUMBNAIL}",
                             caption=f"""
-**#⃣ Video Di Antrian Ke {pos}
-📚 Judul: [{songname}]({url})
-📝 Chat ID: {chat_id}
-🦹🏻 Atas Permintaan: {m.from_user.mention}**
+**#✧ Video Di Antrian Ke {pos}
+✧ Judul: [{songname}]({url})
+✧ Chat ID: {chat_id}
+✧ Atas Permintaan: {m.from_user.mention}**
 """,
                         )
                     else:
@@ -324,10 +324,10 @@ async def vplay(client, m: Message):
                             await m.reply_photo(
                                 photo=f"{IMAGE_THUMBNAIL}",
                                 caption=f"""
-**▶ Mulai Memutar Video
-📚 Judul: [{songname}]({url})
-📝 Chat ID: {chat_id}
-🦹🏻 Atas Permintaan: {m.from_user.mention}**
+**✧ Mulai Memutar Video
+✧ Judul: [{songname}]({url})
+✧ Chat ID: {chat_id}
+✧ Atas Permintaan: {m.from_user.mention}**
 """,
                             )
                         except Exception as ep:
@@ -373,10 +373,10 @@ async def playfrom(client, m: Message):
                     await m.reply_photo(
                         photo="https://telegra.ph/file/6213d2673486beca02967.png",
                         caption=f"""
-**▶ Mulai Memutar Lagu Dari {chat}
-📚 Judul: [{songname}]({link})
-📝 Chat ID: {chat_id}
-🦹🏻 Atas Permintaan: {m.from_user.mention}**
+**✧ Mulai Memutar Lagu Dari {chat}
+✧ Judul: [{songname}]({link})
+✧ Chat ID: {chat_id}
+✧ Atas Permintaan: {m.from_user.mention}**
 """,
                     )
             await hmm.delete()
